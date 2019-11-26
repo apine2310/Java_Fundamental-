@@ -6,7 +6,7 @@ public class Child extends Parent{
 	//1. 메서드 이름, 매개변수, 반환형 일치
 	//2. 접근 한정자는 부모보다 자식이 상위ㅣ거나 같으면 됨
 	public void work(){
-		super.work();
+		//super.work();
 		System.out.println("Child work()");
 	}
 	public void playGame(){

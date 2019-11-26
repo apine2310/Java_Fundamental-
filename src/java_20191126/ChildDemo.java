@@ -14,6 +14,13 @@ public class ChildDemo {
 		c1.playBadook();
 		c1.playGame();
 		c1.work(); //부모,자식 오버라이딩된 메소드는 가까운 자식껄로 호출
+	
+		Parent p2 = new Child();
+		p2.age = 25;
+		//p2.height = 155.24;
+		p2.playBadook();
+		//p2.playGame();
+		p2.work(); //자식에 있는 work가 호출됨
 	}
 
 }
