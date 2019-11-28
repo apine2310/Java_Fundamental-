@@ -70,7 +70,30 @@ public class MemberManagementDemo {
 	//5. 번호를 선택하세요> 메세지를 출력한 후 키보드 입력을 받게 대기 한다.
 	//6. 번호를 입력받으면 run()메서드를 호출한다.
 	public void update(){
+		String id = console("아이디>");
 		
+                int i=0;
+                for(i=0; i<list.size(); i++){
+                    if(list[i].id.equals(id)){
+                        break;
+                    }
+                }
+
+                if(list.size()==i){
+                     System.out.println("수정할 아이디가 없습니다.");
+		}else{
+                     String name = console("이름>");
+                     list[i].name = name;
+                }
+
+		for(i=0; i<list.size(); i++){
+                     System.out.println(list[i].id);
+                     System.out.println(list[i].name);
+                }
+		
+		print();
+		String index = console("번호를 선택하세요>");
+		run(index);
 	}
 	
 	//1. 아이디를 입력받는다.
