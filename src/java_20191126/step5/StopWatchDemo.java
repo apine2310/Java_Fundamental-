@@ -12,7 +12,10 @@ public class StopWatchDemo {
 		StopWatch s1 = (StopWatch)Class.forName(input).newInstance();
 		
 		execute(s1);
-		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
 		/*StopNanoWatch s2 = new StopNanoWatch();
 		execute(s2);
 		
