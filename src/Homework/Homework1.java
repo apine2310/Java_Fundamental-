@@ -79,5 +79,37 @@ public class Homework1 {
 			}
 			System.out.println();
 		}
+		
+		
+		int totalday3 = 0;
+		totalday2 = yoonday + mulyear + 1;  //예)2019년1월1일 값
+		int temp = totalday2%7;
+		System.out.println();
+		System.out.printf("달력 만드는 숫자 %d\n\n", totalday2); // 달력구하기
+		
+		int daynum2 = 1;
+		
+		System.out.print("일요일    월요일    화요일    수요일    목요일    금요일    토요일\n");
+		for(int i2 = 0; i2<12; i2++){
+			outter:
+				for (int i = 0; i < 6; i++) {
+					for (int j = 0; j < 7; j++) {
+						if (i == 0 && j < temp) {
+							System.out.printf("     ");
+						} else {
+							System.out.printf("%5d", daynum2);
+							if (daynum2++ == monthArray[month - 1])
+								break outter;
+						}
+					}
+					System.out.println();
+				}
+		totalday2 = yoonday + mulyear + 1 + monthArray[i2];
+		temp = totalday2%7;
+		daynum2 = 1;
+		System.out.println();
+		System.out.print("일요일    월요일    화요일    수요일    목요일    금요일    토요일\n");
+		}
+		
 	}
 }
