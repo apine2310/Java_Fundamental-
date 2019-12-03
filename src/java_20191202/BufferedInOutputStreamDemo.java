@@ -52,8 +52,8 @@ public class BufferedInOutputStreamDemo {
 		} finally{
 			try{
 				if(fis != null) fis.close();
-				if(fos != null) fos.close();
 				if(bis != null) bis.close();
+				if(fos != null) fos.close();
 				if(bos != null) bos.close();
 			} catch(IOException e){
 				e.printStackTrace();
