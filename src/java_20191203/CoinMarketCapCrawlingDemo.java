@@ -55,11 +55,11 @@ public class CoinMarketCapCrawlingDemo {
 				String volume = trElement.child(5).text();
 				String cap = trElement.child(6).text();
 				String format = String.format("%s\t%s\t%s\t%s\t%s\t%s\t%s%n", date,open,high,low,close,volume,cap);
-		
+				
 				System.out.print(format);
 				pw.print(format);
-			}
-			
+			}	
+				
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
