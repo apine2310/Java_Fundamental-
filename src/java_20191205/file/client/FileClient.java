@@ -20,7 +20,7 @@ public class FileClient {
 	public void run(){
 		try {
 			Socket socket = new Socket(ip,port);
-			String fileName = "mariadb.msi"; //mariadb.pdf
+			String fileName = "scott.sql"; //mariadb.pdf
 			BufferedWriter bw = 
 					new BufferedWriter(
 							new OutputStreamWriter(
